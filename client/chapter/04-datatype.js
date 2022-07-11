@@ -34,5 +34,5 @@
 // 언어 상, 오류
 
 function typeIs(dataType){
-  return Object.prototype.toString.splice(8,-1).toLowerCase();
+  return Object.prototype.toString.call(dataType).splice(8,-1).toLowerCase();
 }

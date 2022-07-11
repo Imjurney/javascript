@@ -16,3 +16,5 @@ console.log(
   //node.js global
 );
 // golobalThis = ES2020
+
+//use srtict는 전역객체(widow) 오염을 막을 수 있다.
