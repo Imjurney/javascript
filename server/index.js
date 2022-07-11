@@ -11,7 +11,7 @@ const params = {
   root: 'client',
   open: false,
   cors: true,
-};
+}
 
 server.start(params);
 
