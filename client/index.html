@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>러닝 ECMAScript</title>
-  <script src="./chapter/03-strict-mode.js"></script>
+  <script src="./chapter/06-operators.js"></script>
 </head>
+
 <body>
   <h1 lang="en">
     <!--  ECMAScript는 js입니다 -->
-    Learning ECMAScript 2022</h1> 
+    Learning ECMAScript 2022</h1>
+  <form id="demoForm">
+    <div class="formControl">
+      <label for="firstNumber">first number</label>
+      <input type="number" id="firstNumber" value="20" />
+    </div>
+    <div class="formControl">
+      <label for="secondNumber">second number</label>
+      <input type="number" id="secondNumber" value="100" />
+    </div>
+    <output id="calcResult">
+      <span id="firstValue">firstNumber</span> +
+      <span id="secondValue">secondNumber</span> =
+      <span id="resultValue">calcuratedValue</span>
+    </output>
+  </form>
+  <script>
+    const firstNumberNode = demoForm.querySelector('#firstNumber');
+    const secondNumberNode = demoForm.querySelector('#secondNumber');
+    const firstValueNode = demoForm.querySelector('#firstValue');
+    const secondValueNode = demoForm.querySelector('#secondValue');
+    const resultValueNode = demoForm.querySelector('#resultValue');
+
+    firstValueNode.textContent = firstNumberNode.value;
+    secondValueNode.textContent = secondNumberNode.value;
+    resultValueNode.textContent = +firstNumberNode.value + +secondNumberNode.value;
+
+    firstNumberNode.addEventListener('input', e => {
+      firstValueNode.textContent = e.target.value;
+      resultValueNode.textContent = +firstNumberNode.value + +secondNumberNode.value;
+    });
+
+    secondNumberNode.addEventListener('input', e => {
+      secondValueNode.textContent = e.target.value;
+      resultValueNode.textContent = +firstNumberNode.value + +secondNumberNode.value;
+    });
+  </script>
 </body>
+
 </html>

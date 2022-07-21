@@ -4,6 +4,24 @@
   // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
   "version": "0.2.0",
   "configurations": [
-    "stopOnEntry" : true
+    
+    {
+      "name": "클라이언트 디버깅",
+      "cwd": "${workspaceFolder}/client",
+      "program": "${file}",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "서버 디버깅",
+      "cwd": "${workspaceFolder}/server",
+      "program": "${file}",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    }
+
+
   ]
 }

@@ -1,6 +1,7 @@
 /* --------------------------------------------------------------------- */
 /* Variables                                                             */
-/* --------------------------------------------------------------------- */
+/* -----------------------------------
+---------------------------------- */
 
 
 /* 다음 내용을 분석한 후, 프로그래밍 할 수 있도록 변수와 상수를 작성해봅니다. ----------- */
@@ -27,9 +28,9 @@
 //rejected 응답(실패)
 
 
-const calcOfpriceQuantity;
+const calcOfpriceQuantity = 98;
 let totalOrderPrice;
-const DAYS_PER_YEAR ="365";
+const DAYS_PER_YEAR = "365";
 let WhetherTopay;
 let paymentHistory;
 const brandPrifix = "Euid";
