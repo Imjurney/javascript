@@ -67,26 +67,17 @@ function checkPerformance() {
   return result;
 }
 
+// const copyedFrontEndDev = frontEndDev.slice();
 
-// do ~ while 문
+// let z0 = performance.now();
+// while (copyedFrontEndDev.length) {
+//   console.log(copyedFrontEndDev.pop());
+// }
+// let z1 = performance.now();
 
-
-// for 문
-
-
-/* 객체 순환 -------------------------------------------------------------- */
-
-
-const javaScript = {
-  creator: 'Brendan Eich',
-  createAt: '1995.05',
-  standardName: 'ECMAScript',
-  currentVersion: 2022,
-};
+// console.log(z1 - z0);
 
 
-// for ~ in 문
 
 
-// for ~ of 문
-// array → object 변환
+
