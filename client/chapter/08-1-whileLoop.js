@@ -63,9 +63,8 @@ function checkPerformance() {
   let time0 = performance.now();
 
   let result = (performance.now() - time0).toFixed(4);;
-  console.log(`처리 시간 :${result}`);
+  console.log(`%c처리 시간 :${result}`);
   return result;
-
 }
 
 
