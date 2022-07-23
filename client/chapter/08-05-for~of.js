@@ -80,12 +80,14 @@ const randomUser = {
 
 // 객체의 키, 값 순환
 // - for ~ in 문
-for (const key in randomUser) {
-  console.log(key);
-}
+// for (const key in randomUser) {
+//   if (({}).hasOwnproperty.call(randomUser, key)) {
+//     const v = randomUser[key];
+//     if (value && typeof value === 'object') {
 
-for (const key of randomUser) {
-  console.log(key);
-}
+//     }
+//   }
+// }
+
 // - for ~ of 문
 // - 성능 비교 진단
