@@ -11,11 +11,28 @@
 // 함수 선언
 // 함수 호출
 // 함수 값 반환
-// function total(priceA, priceB, priceC, priceD) {
+//재사용할 수 있는 부분 추출
 
-//   return priceA + priceB + priceC + priceD;
+function getOneOrZero(){
+  return Math.random() * 1 > 0.5 ? 1 : 0;
+}
 
-// }
+function calcuratePRice(
+   priceA,
+   priceB, 
+   priceC = getOneOrZero(), 
+   priceD = getOneOrZero()
+) {
+
+  if(!priceA || !priceB) {
+    throw new TypeError(
+      'priceA 또는 priceB는 필수 조겁 입니다'
+    )
+  }
+  
+  return priceA + priceB + priceC + priceD;
+
+}
 
 // let totalValue = total(1000, 200, 30, 40);
 // console.log(`총 합 : ${total}`);
@@ -28,6 +45,7 @@
 // 외부(전역 포함), 지역 변수
 
 // 매개 변수 기본 값
+//할당 연산자
 
 // 좋은 함수 작성 여건
 
